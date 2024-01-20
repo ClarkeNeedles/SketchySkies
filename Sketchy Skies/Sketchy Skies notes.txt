@@ -1,0 +1,25 @@
+jump height - 55px
+
+cloudGroup.append(Sprites.Cloud(screen,screen.get_height()-70*i)) --> cloudGroup.append(Sprites.Cloud(screen,70*i))
+
+player.rect.bottom <= \
+cloudGroup[cloudGroup.index(pygame.sprite.spritecollide(player, clouds, False)[0])].rect.bottom --> player.rect.bottom <= \
+cloudGroup[cloudGroup.index(pygame.sprite.spritecollide(player, clouds, False)[0])].rect.centerx
+
+a.goDown()
+if a.dy == 60:
+	a.dy = 0
+
+player - 50,80 (36,58)
+cloud - 75,25 
+
+
+******************************
+Easy: 10 sprites, 70px       |
+
+Medium: 8 sprites, 85 px     |
+
+Hard: 7 sprites, 100px       |
+
+Impossible: 6 sprites, 120px |
+******************************
